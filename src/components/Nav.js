@@ -23,7 +23,7 @@ console.log('nva sdasd')
     return (
         <NavWrapper show={show}>
             <Logo>
-                <img src="../images/logo.svg" alt="Disney Plus Logo" onClick={() => (window.location.href = "/")}/>
+                <img src="/images/logo.svg" alt="Disney Plus Logo" onClick={() => (window.location.href = "/")}/>
             </Logo>
         </NavWrapper>
     )
