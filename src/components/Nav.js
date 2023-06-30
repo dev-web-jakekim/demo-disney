@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Nav = () => {
 
     const [show, setShow] = useState(false);
-console.log('nva sdasd')
+    console.log('nva sdasd')
     useEffect(() => {
         window.addEventListener('scroll', handleScroll)
         return () => {
@@ -21,41 +21,41 @@ console.log('nva sdasd')
     }
 
     return (
-        <NavWrapper show={show}>
-            <Logo>
-                <img src="/images/logo.svg" alt="Disney Plus Logo" onClick={() => (window.location.href = "/")}/>
-            </Logo>
-        </NavWrapper>
+      <NavWrapper show={show}>
+          <Logo>
+              <img src="/images/logo.svg" alt="Disney Plus Logo" onClick={() => (window.location.href = "/")}/>
+          </Logo>
+      </NavWrapper>
     )
 }
 
 export default Nav
 
 const NavWrapper = styled.nav`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 70px;
-  background-color: ${props => props.show ? "#090b13" : "transparent"};
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 36px;
-  letter-spacing: 16px;
-  z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: ${props => props.show ? "#090b13" : "transparent"};
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 36px;
+    letter-spacing: 16px;
+    z-index: 3;
 `;
 
 const Logo = styled.a`
-  padding:0;
-  width: 80px;
-  margin-top: 4px;
-  max-height: 70px;
-  font-size: 0;
-  diplay: inline-block;
+    padding:0;
+    width: 80px;
+    margin-top: 4px;
+    max-height: 70px;
+    font-size: 0;
+    diplay: inline-block;
 
-  img {
-    display: block;
-    width: 100%;
-  }
+    img {
+        display: block;
+        width: 100%;
+    }
 `
